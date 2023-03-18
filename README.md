@@ -1,7 +1,5 @@
 # footpath-search
 
-This is my submission for ***Project 1 of COMP20003 Algorithms and Data Structures in Sem 2 2022***. 
-
 ## Overview
 
 This program utilizes a linked list to create a dictionary that stores information about footpaths in Melbourne sourced from a given dataset. The dictionary is constructed by reading the data from a file and inserting each footpath record as a node in the linked list. The program also incorporates a search function that allows users to retrieve information about footpaths in Melbourne using attributes (keys) in the dataset. When a match is found, the program outputs the relevant record(s) associated with the key.
@@ -51,7 +49,7 @@ Swanston Street --> NOTFOUND
 
 To implement a simple calculated index on the dataset (address), this program reads the data from a CSV file and stores it in a linked list of pointers to structs for the data. Each record is stored in a separate node. Additionally, this program constructs a sorted array that contains pointers to each node in the dataset, sorted on the `grade1in` attribute.
 
-The program accepts double type values from stdin, searches the index for the closest record to that value, and outputs the record(s) and the grade1in value of the record found to an output file. It assumes no blank lines will be present in the queries. The closest point is defined by the absolute difference between the search value and the dataset value. If multiple closest matches for the query are found in the dataset, the program may select any or all matching records.
+The program accepts double type values from stdin, searches the index for the closest record to that value, and outputs the record(s) and the `grade1in` value of the record found to an output file. It assumes no blank lines will be present in the queries. The closest point is defined by the absolute difference between the search value and the dataset value. If multiple closest matches for the query are found in the dataset, the program may select any or all matching records.
 
 To run the program, the Makefile produces an executable program called `dict2`. The program takes three command line arguments: the filename of the *data file*, the filename of the *output file*, and the *stage number* (which is always 2 for this part).
 
@@ -80,3 +78,5 @@ With the following output to *stdout*:
 20.49 --> 20.5
 6 --> 6.1
 ```
+
+*** Note: This is my submission for *Project 1 of COMP20003 Algorithms and Data Structures in Sem 2 2022*. ***
